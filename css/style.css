@@ -552,6 +552,20 @@ ul {
     background-color: var(--main-color);
 }
 
+/*-----------------------
+ App Screenshots Section
+-----------------------*/
+.screenshot-item {
+    margin: 15px;
+
+}
+
+.screenshot-item img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
 
 
 
