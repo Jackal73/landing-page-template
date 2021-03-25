@@ -856,6 +856,35 @@ ul {
     text-align: center;
 }
 
+/*--------------------
+ Team Section
+--------------------*/
+.team {
+    background-color: var(--black-100);
+}
+
+.team-item {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+}
+
+.team-item h3 {
+    font-size: 18px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 15px 0 5px;
+    text-transform: capitalize;
+}
+
+.team-item span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    text-transform: capitalize;
+}
 
 
 

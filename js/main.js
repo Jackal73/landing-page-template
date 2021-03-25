@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   /* -------------------------- Navbar Shrink ----------------------------- */
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 90) {
       $(".navbar").addClass("navbar-shrink");
     } else {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   /* -------------------------- Video Popup ------------------------------- */
   const videoSrc = $("#player-1").attr("src");
-  $(".video-play-btn, .video-popup").on("click", function() {
+  $(".video-play-btn, .video-popup").on("click", function () {
     if ($(".video-popup").hasClass("open")) {
       $(".video-popup").removeClass("open");
       $("#player-1").attr("src", "");
@@ -31,15 +31,15 @@ $(".features-carousel").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 2
+      items: 2,
     },
     1000: {
-      items: 3
-    }
-  }
+      items: 3,
+    },
+  },
 });
 
 /* ---------------------------- Screenshots Carousel ---------------------- */
@@ -50,15 +50,15 @@ $(".screenshots-carousel").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 2
+      items: 2,
     },
     1000: {
-      items: 4
-    }
-  }
+      items: 4,
+    },
+  },
 });
 
 /* ---------------------------- Testimonials Carousel ---------------------- */
@@ -69,13 +69,32 @@ $(".testimonials-carousel").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 2
+      items: 2,
     },
     1000: {
-      items: 3
-    }
-  }
+      items: 3,
+    },
+  },
+});
+
+/* ---------------------------- Testimonials Carousel ---------------------- */
+$(".team-carousel").owlCarousel({
+  loop: true,
+  margin: 0,
+  autoplay: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
 });
