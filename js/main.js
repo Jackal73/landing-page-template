@@ -79,7 +79,7 @@ $(document).ready(function () {
     },
   });
 
-  /* ---------------------------- Team Carousel ---------------------- */
+  /* --------------------------------- Team Carousel ----------------------------- */
   $(".team-carousel").owlCarousel({
     loop: true,
     margin: 0,
@@ -101,5 +101,10 @@ $(document).ready(function () {
   /* ---------------------------- Page scrolling - ScrollIt ---------------------- */
   $.scrollIt({
     topOffset: -50,
+  });
+
+  /* --------------------------------- Navbar Collapse --------------------------- */
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
   });
 });
