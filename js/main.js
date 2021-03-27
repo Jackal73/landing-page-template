@@ -21,80 +21,85 @@ $(document).ready(function () {
       }
     }
   });
-});
 
-/* ------------------------------ Features Carousel ----------------------- */
-$(".features-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
+  /* ------------------------------ Features Carousel ----------------------- */
+  $(".features-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
     },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
+  });
 
-/* ---------------------------- Screenshots Carousel ---------------------- */
-$(".screenshots-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
+  /* ---------------------------- Screenshots Carousel ---------------------- */
+  $(".screenshots-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
     },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 4,
-    },
-  },
-});
+  });
 
-/* ---------------------------- Testimonials Carousel ---------------------- */
-$(".testimonials-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
+  /* ---------------------------- Testimonials Carousel ---------------------- */
+  $(".testimonials-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
     },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
+  });
 
-/* ---------------------------- Testimonials Carousel ---------------------- */
-$(".team-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
+  /* ---------------------------- Team Carousel ---------------------- */
+  $(".team-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
     },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
+  });
+
+  /* ---------------------------- Page scrolling - ScrollIt ---------------------- */
+  $.scrollIt({
+    topOffset: -50,
+  });
 });

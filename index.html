@@ -25,29 +25,29 @@
 
                 <!-- Toggler/collapsible Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                 </button>
 
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Screenshots</a>
+                            <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
+                            <a class="nav-link" data-scroll-nav="4" href="#">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" data-scroll-nav="5" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" data-scroll-nav="6" href="#">Contact</a>
                         </li>
 
                     </ul>
@@ -57,7 +57,7 @@
         <!-- Navbar End -->
 
         <!-- Home Section Start -->
-        <section class="home d-flex align-items-center">
+        <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
             <div class="effect-wrap">
                 <i class="fas fa-plus effect effect-1"></i>
                 <i class="fas fa-plus effect effect-2"></i>
@@ -71,7 +71,7 @@
                             <p>Lorem ipsum pork loin ground round leberkas cupim spare ribs kevin buffalo pancetta
                                 ribeye. Capicola short ribs boudin</p>
                             <div class="home-btn">
-                                <a href="#" class="btn btn-1">Download App</a>
+                                <a href="#" data-scroll-goto="3" class="btn btn-1">Download App</a>
                                 <button type="button" class="btn btn-1 video-play-btn">
                                     <i class="fas fa-play"></i>
                                 </button>
@@ -90,7 +90,7 @@
         <!-- Home Section End -->
 
         <!-- Features Section Start -->
-        <section class="features section-padding">
+        <section class="features section-padding" id="features" data-scroll-index="1">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -194,7 +194,7 @@
         <!-- Fun Facts Section End -->
 
         <!-- App Screenshots Section Start -->
-        <section class="app-screenshots section-padding">
+        <section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -227,7 +227,7 @@
         <!-- App Screenshots Section End -->
 
         <!-- App Download Section Start -->
-        <section class="app-download section-padding">
+        <section class="app-download section-padding" data-scroll-index="3">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -311,7 +311,7 @@
         <!-- How It Works Section End -->
 
         <!-- Testimonials Section Start -->
-        <section class="testimonials section-padding">
+        <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -393,7 +393,7 @@
         <!-- Testimonials Section End -->
 
         <!-- Pricing Section Start -->
-        <section class="pricing section-padding">
+        <section class="pricing section-padding" id="pricing" data-scroll-index="5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -589,7 +589,7 @@
         <!-- FAQ Section End -->
 
         <!-- Contact Section Start -->
-        <section class="contact section-padding">
+        <section class="contact section-padding" data-scroll-index="6">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -693,11 +693,11 @@
                         <div class="footer-col">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Screenshots</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#screenshots">Screenshots</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
                             </ul>
                         </div>
                     </div
@@ -746,6 +746,9 @@
 
         <!-- owl carousel js -->
         <script src="js/owl.carousel.min.js"></script>
+
+        <!-- ScrollIt js -->
+        <script src="js/ScrollIt.min.js"></script>
 
         <!-- main js -->
         <script src="js/main.js"></script>
